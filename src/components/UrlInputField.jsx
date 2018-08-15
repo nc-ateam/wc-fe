@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
+import UrlInputBox from './UrlInputBox';
+import UrlSubmitButton from './UrlSubmitButton';
 
 class UrlInputField extends Component {
-  state = {};
+  state = {
+    input: "",
+
+  };
   render() {
     return (
-      <div>
-        <h3>add url in the form below:</h3>
-      </div>
+      <form>
+        <UrlInputBox handleInputChange={this.handleInputChange} />
+        <UrlSubmitButton />
+      </form>
     );
   }
+
+  handleInputChange = (event) => {
+    this.setState({ input: event.target.value })
+  }
+
 }
 
 export default UrlInputField;

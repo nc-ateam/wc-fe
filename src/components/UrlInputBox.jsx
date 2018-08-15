@@ -1,6 +1,6 @@
 import React from 'react';
 
-const UrlInputBox = () => (<input type="text" />);
+const UrlInputBox = ({ handleInputChange }) => (<input onChange={handleInputChange} type="text" />);
 
 
 export default UrlInputBox;
