@@ -4,12 +4,11 @@ import UrlSubmitButton from './UrlSubmitButton';
 
 class UrlInputField extends Component {
   state = {
-    input: "",
-
+    input: ""
   };
   render() {
     return (
-      <form>
+      <form handleSubmit={(event) => this.props.handleSubmit(event, this.state.input)}>
         <UrlInputBox handleInputChange={this.handleInputChange} />
         <UrlSubmitButton />
       </form>
