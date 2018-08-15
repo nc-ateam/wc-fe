@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import UrlInputField from './UrlInputField';
+import fakeData from "./FakeData.json"
+import ReportField from './ReportField';
 
 
 class Home extends Component {
@@ -8,15 +10,16 @@ class Home extends Component {
   }
 
   render() {
+    const { links } = this.state;
     return (
-      <UrlInputField handleSubmit={this.handleSubmit} />
+      links[0] ? <ReportField links={links} /> : <UrlInputField handleSubmit={this.handleSubmit} />
     );
 
   }
 
   handleSubmit = (event, url) => {
-    event.preventDefualt();
-    console.log(url)
+    event.preventDefault();
+    this.setState({ links: fakeData })
     // fetch from api
     // set state with links using passed in url string
   }

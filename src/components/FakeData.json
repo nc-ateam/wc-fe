@@ -1,38 +1,38 @@
 [
   {
-    "pathname": "http://example.com/one",
-    "works": true
+    "pathName": "http://example.com/one",
+    "statusCode": 200
   },
   {
-    "pathname": "http://made.com/up",
-    "works": false
+    "pathName": "http://made.com/up",
+    "statusCode": 404
   },
   {
-    "pathname": "http://time.com/magazine",
-    "works": true
+    "pathName": "http://time.com/magazine",
+    "statusCode": 200
   },
   {
-    "pathname": "http://google.com/meaning/of/life",
-    "works": true
+    "pathName": "http://google.com/meaning/of/life",
+    "statusCode": 200
   },
   {
-    "pathname": "http://youtube.com/dogs",
-    "works": false
+    "pathName": "http://youtube.com/dogs",
+    "statusCode": 404
   },
   {
-    "pathname": "http://cats.com/pictures",
-    "works": true
+    "pathName": "http://cats.com/pictures",
+    "statusCode": 200
   },
   {
-    "pathname": "http://hamsters.com/documentaries/drugs",
-    "works": true
+    "pathName": "http://hamsters.com/documentaries/drugs",
+    "statusCode": 200
   },
   {
-    "pathname": "http://ismydogadrugaddict.com/answers",
-    "works": false
+    "pathName": "http://ismydogadrugaddict.com/answers",
+    "statusCode": 404
   },
   {
-    "pathname": "http://god.com/divine/intervention",
-    "works": false
+    "pathName": "http://god.com/divine/intervention",
+    "statusCode": 404
   }
 ]

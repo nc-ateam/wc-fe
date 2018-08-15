@@ -7,7 +7,6 @@ class UrlInputField extends Component {
     input: ""
   };
   render() {
-    console.log(this.props)
     return (
       <form onSubmit={(event) => this.props.handleSubmit(event, this.state.input)}>
         <UrlInputBox handleInputChange={this.handleInputChange} />

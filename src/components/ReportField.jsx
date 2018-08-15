@@ -5,6 +5,7 @@ import TxtReport from './TxtReport';
 
 class ReportField extends Component {
   render() {
+    console.log(this.props.links)
     return (
       <div>
         <TxtReport />
