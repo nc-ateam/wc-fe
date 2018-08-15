@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+
 import UrlInputField from './UrlInputField';
+
+import ReportField from './ReportField';
+
 
 class Home extends Component {
   state = {
