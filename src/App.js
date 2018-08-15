@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Heading from "./components/Heading";
 import Home from "./components/Home";
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import ReportField from "./components/ReportField";
 
 class App extends Component {
@@ -10,9 +10,11 @@ class App extends Component {
     return (
       <div className="App">
         <Heading />
-        <Route path='/' component={Home} />
-        <Route path='/report' component={ReportField} />
-        {/* Route to path /report here */}
+        <Switch>
+          <Route path='/report' component={ReportField} />
+          <Route strict path='/' component={Home} />
+          {/* Route to path /report here */}
+        </Switch>
       </div>
     );
   }

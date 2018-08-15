@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-
 import UrlInputField from './UrlInputField';
-
-import ReportField from './ReportField';
 
 
 class Home extends Component {
@@ -12,15 +9,14 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
-        <UrlInputField handleSubmit={this.handleSubmit} />
-      </div>
+      <UrlInputField handleSubmit={this.handleSubmit} />
     );
 
   }
 
   handleSubmit = (event, url) => {
     event.preventDefualt();
+    console.log(url)
     // fetch from api
     // set state with links using passed in url string
   }
