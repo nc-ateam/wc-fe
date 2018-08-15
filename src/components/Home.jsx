@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReportField from './ReportField';
 
 class Home extends Component {
   state = {}
