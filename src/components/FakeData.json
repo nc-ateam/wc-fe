@@ -1,0 +1,38 @@
+[
+  {
+    "pathname": "http://example.com/one",
+    "works": true
+  },
+  {
+    "pathname": "http://made.com/up",
+    "works": false
+  },
+  {
+    "pathname": "http://time.com/magazine",
+    "works": true
+  },
+  {
+    "pathname": "http://google.com/meaning/of/life",
+    "works": true
+  },
+  {
+    "pathname": "http://youtube.com/dogs",
+    "works": false
+  },
+  {
+    "pathname": "http://cats.com/pictures",
+    "works": true
+  },
+  {
+    "pathname": "http://hamsters.com/documentaries/drugs",
+    "works": true
+  },
+  {
+    "pathname": "http://ismydogadrugaddict.com/answers",
+    "works": false
+  },
+  {
+    "pathname": "http://god.com/divine/intervention",
+    "works": false
+  }
+]
