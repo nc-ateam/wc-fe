@@ -5,11 +5,11 @@ import TxtReport from './TxtReport';
 
 class ReportField extends Component {
   render() {
-    console.log(this.props.links)
+    const { links } = this.props
     return (
       <div>
         <TxtReport />
-        <Graph />
+        <Graph links={links} />
         <DownloadButton />
       </div>
     );

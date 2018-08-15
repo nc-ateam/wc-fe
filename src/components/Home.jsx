@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import UrlInputField from './UrlInputField';
-import fakeData from "./FakeData.json"
+import fakeData from "../FakeData.json"
 import ReportField from './ReportField';
 
 
